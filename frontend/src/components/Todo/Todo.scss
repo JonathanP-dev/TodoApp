@@ -1,0 +1,36 @@
+.todo-container {
+  color: #fff;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: .8rem;
+
+  .todo-container--check-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  button {
+    // este background es solo si se selecciona la imagen, seria cuando se activa la tarea????
+    background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    border: none;
+    // estas lineas son para cuando no esta activa, ver como hacer toggle a las clases del boton cuando clickeo
+    // background: none;
+    // border: 1px solid black;
+    border-radius: 50%;
+    width: 1.3rem;
+    height: 1.3rem;
+
+    img {
+      width: 50%;
+      align-self: center;
+    }
+  }
+
+  .delete-todo--btn {
+    background: none;
+  }
+}
