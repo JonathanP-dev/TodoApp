@@ -11,15 +11,17 @@
     display: flex;
     gap: 1rem;
     align-items: center;
+
+    .todo-content--completed {
+      text-decoration: line-through;
+    }
   }
 
   button {
     // este background es solo si se selecciona la imagen, seria cuando se activa la tarea????
-    background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
-    border: none;
     // estas lineas son para cuando no esta activa, ver como hacer toggle a las clases del boton cuando clickeo
-    // background: none;
-    // border: 1px solid black;
+    background: none;
+    border: 1px solid black;
     border-radius: 50%;
     width: 1.3rem;
     height: 1.3rem;
@@ -30,7 +32,13 @@
     }
   }
 
+  .todo-btn--active {
+    background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    border: none;
+  }
+
   .delete-todo--btn {
     background: none;
+    border: none;
   }
 }

@@ -9,7 +9,6 @@ export function TodoList () {
 
   const {todoList} = useContext(TodosContext)
   useEffect(()=> {
-    console.log(`todoList en TodoList comp: ${JSON.stringify(todoList)}`)
   },[todoList])
   return (
     <ul>

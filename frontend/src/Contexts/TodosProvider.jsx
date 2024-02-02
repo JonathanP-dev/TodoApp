@@ -9,31 +9,30 @@ export function TodosProvider ({children}) {
       id: 1,
       content: 'Create a new design',
       active: true,
-      Completed: false,
+      completed: false,
     },
     {
       id: 2,
       content: 'Read the book',
       active: true,
-      Completed: false,
+      completed: false,
     },
     {
       id: 3,
       content: 'Delete this shit',
       active: true,
-      Completed: false,
+      completed: true,
     },
     {
       id: 4,
       content: 'New work',
-      active: true,
-      Completed: false,
+      active: false,
+      completed: false,
     },
   ]
   const [todoList, setTodoList] = useState([])
   useEffect(() => {
     setTodoList(TODOS)
-    console.log(`todoList en Context: ${JSON.stringify(todoList)}`)
   }, [])
 
   return(
