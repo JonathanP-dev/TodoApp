@@ -1,0 +1,17 @@
+.todo-manager--container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.items-count {
+  color: hsl(233, 14%, 35%);
+  font-size: .8rem;
+}
+
+.clear-completed--btn {
+  color: hsl(233, 14%, 35%);
+  font-size: .8rem;
+  border: none;
+  background: none;
+}

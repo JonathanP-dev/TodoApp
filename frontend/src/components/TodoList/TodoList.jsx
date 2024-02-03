@@ -1,5 +1,5 @@
 
-import { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect } from 'react'
 import { Todo } from '../Todo/Todo'
 import { TodoItem } from '../TodoItem/TodoItem'
 import { TodosContext } from '../../Contexts/TodosContext'

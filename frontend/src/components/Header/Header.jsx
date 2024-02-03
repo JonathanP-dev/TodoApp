@@ -1,9 +1,22 @@
+import { useEffect, useState } from 'react';
 import './Header.scss'
 
 export function Header () {
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const dskImg = './bg-desktop-dark.jpg'
+  const mobImg = './bg-mobile-dark.jpg'
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const renderImg = windowWidth >= 1440 ? dskImg : mobImg
   return(
     <header className='header-container'>
-      <img className='header-img' src='./bg-mobile-dark.jpg' />
+      <img className='header-img' src={renderImg} />
       <nav className='nav-container'>
         <h1>TODO</h1>
         <button  className='mode-btn'>

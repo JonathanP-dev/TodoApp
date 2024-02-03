@@ -13,7 +13,6 @@ export function CreateTodo () {
 
   const handleActive = () => {
     setActive(!active)
-    console.log(active)
   }
   return (
       <form onSubmit={createTodo}>

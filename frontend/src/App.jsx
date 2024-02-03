@@ -7,6 +7,7 @@ import { Header } from './components/Header/Header'
 import { Home } from './components/Main/Home'
 import { Panel } from './components/Panel/Panel'
 import { TodoList } from './components/TodoList/TodoList'
+import { TodoManager } from './components/TodoManager/TodoManager'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         </Panel>
         <Panel>
           <TodoList />
+          <TodoManager />
         </Panel>
         <Panel>
           <FilterTodos />
