@@ -6,6 +6,7 @@
   font-weight: 700;
   letter-spacing: .7rem;
   z-index: 1;
+  justify-content: center;
 }
 
 .header-img {
@@ -22,6 +23,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  max-width: 800px;
 }
 
 .mode-btn {
