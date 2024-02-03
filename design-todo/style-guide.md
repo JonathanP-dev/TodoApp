@@ -28,11 +28,11 @@ The designs were created to the following widths:
 
 - Fondo General Dark: hsl(235, 21%, 11%)
 - Field dark: hsl(235, 24%, 19%)
-- Light Grayish Blue: hsl(234, 39%, 85%)
-- Light Grayish Blue (hover): hsl(236, 33%, 92%)
+- Contenido Todo: hsl(234, 39%, 85%)
+- Header: hsl(236, 33%, 92%)
 - Dark Grayish Blue: hsl(234, 11%, 52%)
 - Letras footer: hsl(233, 14%, 35%)
-- Very Dark Grayish Blue: hsl(237, 14%, 26%)
+- Circulo activar: hsl(237, 14%, 26%)
 
 ## Typography
 

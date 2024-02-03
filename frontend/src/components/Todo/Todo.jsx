@@ -1,3 +1,4 @@
+import { ActiveBtn } from '../../elements/ActiveBtn'
 import './Todo.scss'
 
 export function Todo ({todo}) {
@@ -5,9 +6,7 @@ export function Todo ({todo}) {
   return (
     <article className='todo-container'>
       <div className='todo-container--check-container'>
-        <button className={todo.active ?'todo-btn--active' : ''}>
-          {todo.active && <img src="./icon-check.svg" alt="" />}
-        </button>
+        <ActiveBtn active={todo.active}/>
         <span className={todo.completed ? 'todo-content--completed' : ''}>{todo.content}</span>
       </div>
       <button className='delete-todo--btn'>
